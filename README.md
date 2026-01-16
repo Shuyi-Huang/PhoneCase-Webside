@@ -1,3 +1,5 @@
+This is a group project, worked with other 3 group members
+
 Project Brief
 
 
@@ -149,3 +151,71 @@ informed decisions.
 of my order and tracking information so
 that I know my purchase was successful
 and can monitor its delivery.
+
+Webside features
+
+home page
+
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.46.28.png)
+
+products page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.46.49.png)
+
+
+products page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.47.31.png)
+
+
+
+phone case page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.47.48.png)
+
+
+
+wallets page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.47.56.png)
+
+
+ipad cases page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.48.03.png)
+
+
+
+macbook cases page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.48.11.png)
+
+
+
+watch bands page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.48.18.png)
+
+
+about us page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.48.30.png)
+
+
+
+cart page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.48.42.png)
+
+
+products details page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.49.09.png)
+
+
+products details page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.50.41.png)
+
+
+
+checkout details page
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.49.29.png)
+
+
+
+checkout details page continue
+![image alt](https://github.com/Shuyi-Huang/PhoneCase-Webside/blob/16917f15f3c85ad7de3e525a3711b9f4279087f3/features/Screenshot%202026-01-16%20at%2011.49.42.png)
+
+
+
+
