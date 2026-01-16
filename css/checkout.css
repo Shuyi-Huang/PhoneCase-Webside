@@ -1,0 +1,151 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main{
+  background-color: #9a6d5a;
+}
+
+/* Header and Navigation Styles */
+.header-background {
+  background-color: #2C1300;
+  }
+  
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 20px;
+  height: 40px;
+}
+
+#logo {
+  width: 150px;
+  margin-left: 20%;
+}
+
+#nav {
+  margin-top: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: right; 
+  align-items: flex-start;
+}
+
+#nav li {
+  padding: 0 15px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #F4EDE4;
+}
+
+/* form */
+.checkout {
+  background-color: #EAD3C1;
+  padding: 50px;
+  width: 600px;
+  margin: auto;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.email-news{
+  display:inline;
+  font-weight:lighter;
+}
+
+.text-news,
+.billing-address{
+  display:inline;
+}
+
+.contact input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.contact input[type="email"], input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #2C1300;
+  background-color: transparent;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 15px;
+}
+table td {
+  padding: 5px 0;
+}
+
+#credit-card{
+  margin: 8px;
+  display:inline;
+}
+
+.card-nb{
+  margin-top: 8px;
+}
+
+button {
+  display: inline-block;
+  color: #EAD3C1;
+  border: 2px solid #2C1300;
+  background-color: #2C1300; 
+  cursor: pointer;
+  padding: 20px 0px; 
+  width: 100%;
+  margin-top: 20px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: transparent; 
+  color: #2C1300;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2C1300;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #F4EDE4;
+}

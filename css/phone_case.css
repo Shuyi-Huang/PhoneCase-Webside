@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #9a6d5a;
+}
+
+.order-button button a{
+  color:#EAD3C1;
+  text-decoration: none;
+
+}
+
+/* Header and Navigation Styles */
+.header-background {
+background-color: #2C1300;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 20px;
+  height: 40px;
+}
+
+#logo {
+  width: 150px;
+  margin-left: 20%;
+}
+
+#nav {
+  margin-top: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: right; 
+  align-items: flex-start;
+}
+
+#nav li {
+  padding: 0 15px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #F4EDE4;
+}
+
+/* Main Content */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-display {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #EAD3C1;
+}
+
+.image-gallery {
+  flex: 1;
+  text-align: center;
+}
+
+.active-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.product-info {
+  flex: 2;
+}
+
+h1, .subtitle, .ratings, .purchase-options, .availability {
+  margin-bottom: 20px;
+}
+
+.selector, .quantity-selector {
+  margin-bottom: 10px;
+}
+
+/* Base styles for the select element */
+select, .form-input {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #2C1300;
+  appearance: none;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.price {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  font-size: 1.5em;
+  display: inline-block;
+  background-color: #2C1300; 
+  color:#EAD3C1;
+  text-decoration: none;
+  border: 2px solid #2C1300;
+  cursor: pointer;
+  padding: 20px 60px; 
+  margin-top: 20px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+}
+/* updates the link in add to cart to the correct colour and removes underline */
+.add-to-cart a {
+  color: inherit;
+  text-decoration:none;
+}
+
+.back-button {
+  font-size: 1em;
+  display: inline-block;
+  background-color: #2C1300; 
+  color: #EAD3C1;
+  border: 2px solid #2C1300;
+  cursor: pointer;
+  padding: 20px 40px; 
+  margin-top: 20px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+}
+
+.add-to-cart:hover, .back-button:hover {
+  background-color: transparent; 
+  color: #2C1300;
+}
+
+.availability i {
+  color: green;
+}
+
+.ratings .stars {
+  color: #e5a00d;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #EAD3C1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.footer-section {
+  padding: 0 20px;
+}
+
+/* Quick Links Styles */
+.quick-links {
+  flex: 0.9;
+  text-align: left;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 10px 0px;
+  margin-left: 30%;
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+  color: #2C1300;
+  text-decoration: none;
+}
+
+/* Subscription Form Styles */
+.keep-in-touch {
+  flex: 1.2;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+.keep-in-touch h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2C1300;
+}
+
+.keep-in-touch form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section.keep-in-touch input[type="text"],
+.footer-section.keep-in-touch input[type="email"] {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #2C1300;
+    background-color: transparent;
+}
+
+.footer-section.keep-in-touch input[type="text"]:hover,
+.footer-section.keep-in-touch input[type="email"]:hover {
+  border-bottom: 2px solid #A2571A;
+}
+
+.keep-in-touch input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.keep-in-touch label {
+  font-size: 14px;
+  color: #2C1300;
+}
+
+.keep-in-touch button {
+  padding: 10px;
+  background-color: transparent; 
+  color: #2C1300;
+  border: 2px solid #2C1300;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+}
+
+.keep-in-touch button:hover {
+  background-color: #2C1300; 
+  color: #fff;
+}
+
+/* Social Media Links Styles */
+.social-media {
+  flex: 0.9;
+  text-align: right;
+}
+
+.social-media-links {
+  padding: 20px 0px;
+  margin-right: 30%;
+}
+
+.social-media-links a {
+  margin-right: 10px;
+}
+
+.social-media-links a img {
+  width: 24px;
+  height: 24px;
+}

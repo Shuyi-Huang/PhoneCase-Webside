@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="js/checkout.js" type="text/Javascript">  
+  <title>Check Out</title>
+</head>
+<body>
+   <!-- Logo and main navigation -->
+  <main>
+
+  <!-- Header -->
+  <header class="header-background">
+    <a href="index.html"><img src="images/small_logo.WebP" alt="Charizs Shields Logo" id="logo"></a>
+    <nav id="nav">
+      <ul>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <form class="checkout" method="POST" >
+
+      <!-- contact -->
+      <section class="contact">
+          <h2>Contact</h2>
+        <input type="email" id="email" name="email" placeholder="example@example.com">
+      
+        <input type="checkbox" id="email-news" name="email-news" checked>
+        <label for="email-news" class='email-news'>Email me with news and offers</label>
+      </section>
+      
+
+      <!-- Delivery -->
+      <section class="delivery">
+        <h2>Delivery</h2>
+        <label for="country">Country/Region</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="england">England</option>
+          <option value="indian">Indian</option>
+          <option value="china">China</option>
+        </select>
+
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" name="first-name">
+
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="last-name">
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address">
+
+        <label for="apartment">Apartment, suite, etc. (optional)</label>
+        <input type="text" id="apartment" name="apartment">
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+
+        <label for="state">State/territory</label>
+        <select id="state" name="state">
+          <option value="northern-territory">Northern Territory</option>
+          <option value="south-australia">South Australia</option>
+          <option value="west-australia">Western Australia</option>
+          <option value="queensland">Queensland</option>
+          <option value="tasmania">Tasmania</option>
+          <option value="new-south-wales">New South Wales</option>
+        </select>
+
+        <label for="postcode">Postcode</label>
+        <input type="text" id="postcode" name="postcode">
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone">
+
+        <input type="checkbox" id="text-news" name="text-news">
+        <label for="text-news" class='text-news'>Text me with news and offers</label>
+      </section>
+
+      <!-- Payment -->
+      <section class="payment">
+        <h2>Payment</h2>
+        <p>All transactions are secure and encrypted.</p>
+
+        <label for="payment-method">Payment Method</label>
+        <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+        <label for="credit-card" id="credit-card">Credit card</label>
+        <span class="payment-methods">
+            <img src="images/visa.svg" alt="VISA">
+            <img src="images/mc.svg" alt="MasterCard">
+            <img src="images/amex.svg" alt="American Express">
+            <img src="images/unionpay.svg" alt="UnionPay">
+        </span>
+
+        <label for="card-number" class="card-nb">Card number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Card number">
+
+        <label for="exp-date">Expiration date (MM / YY)</label>
+        <input type="text" id="exp-date" name="exp-date" placeholder="MM / YY">
+
+        <label for="security-code">Security code</label>
+        <input type="text" id="security-code" name="security-code" placeholder="Security code">
+
+        <label for="card-name">Name on card</label>
+        <input type="text" id="card-name" name="card-name" placeholder="Name on card">
+
+        <input type="checkbox" id="billing-address" name="billing-address" checked>
+        <label for="billing-address" class="billing-address">Use shipping address as billing address</label>
+
+      </section>
+
+      <button type="submit">Pay now</button>
+
+    </form>
+
+    <footer>
+      <!--Footer -->
+      <p>&copy; 2024 Charzis Shields</p>
+    </footer>
+  </main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/checkout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "cart": [
+        {
+            "product": "Phone Case",
+            "price": "$50",
+            "quantity": "1"
+    
+        },
+        {
+            "product": "Ipad Case",
+            "price": "$80",
+            "quantity": "1"
+        }
+    ]
+}

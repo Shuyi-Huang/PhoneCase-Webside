@@ -1,0 +1,80 @@
+/* Side Bar Style */
+.cart-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #F4EDE4;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+  z-index: 100;
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.cart-sidebar.open {
+  transform: translateX(0);
+}
+
+/* Close Button Styling */
+#close-cart {
+  font-size: 24px;
+  color: #2C1300;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  line-height: 1;
+  padding: 20px;
+}
+
+/* Section Headings */
+.cart-content {
+  padding: 20px;
+  color: #2C1300;
+}
+
+.cart-content h1 {
+  text-align: center;
+}
+
+.cart-content h2 {
+  font-size: 18px;
+  color: #2C1300;
+}
+
+/* List and List Items */
+#cart-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #2C1300;
+}
+
+/* Order Button Styling */
+.order-button button {
+  display: inline-block;
+  color: #EAD3C1;
+  border: 2px solid #2C1300;
+  background-color: #2C1300; 
+  cursor: pointer;
+  padding: 20px 60px; 
+  margin-top: 20px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+}
+
+.order-button button:hover {
+  background-color: transparent; 
+  color: #2C1300;
+}

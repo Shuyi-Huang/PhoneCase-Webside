@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charizs Shields offers a wide range of protective cases for your electronic devices.">
+    <meta name="keywords" content="Charizs Shields, phone cases, watch cases, iPad cases, MacBook cases">
+    <title>Charizs Shields Shopping Site</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Logo and main navigation -->
+    <div class="header-background">
+        <header>
+            <a href="index.html"><img src="images/small_logo.WebP" alt="Charizs Shields Logo" id="logo"></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="about.html"><b>ABOUT US</b></a></li>
+                    <li><a onclick="openCart()">CART</a></li>
+                </ul>
+            </nav>  
+        </header>
+    </div>
+    <div id="cart-sidebar" class="cart-sidebar">
+        <section class="cart-content">
+            <button onclick="closeCart()" id="close-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <h1>CART</h1>
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <ul id="cart-list"></ul>
+                <script>
+                    window.onload = function() {
+                        displayCartData();
+                    };
+                </script>
+            </section>
+            <section class="order-button">
+                <button><a href="checkout.html">Place Order</a></button>
+            </section>
+        </section>  
+    </div>    
+    <div class="main-container">
+        <div class="main-content">
+            <section>
+                <h2>Our Company</h2>
+                <p>Charizs Shields is an up and coming local phone case business.</p>
+                <p>We are based in Australia, but hope to expand to other countries in the near future.</p>
+            </section>
+            <section>
+                <h2>Our Mission</h2>
+                <p>Here at Charizs Shields, we believe that environmental impact should not be a consequence of style.</p>
+                <p>All of our phone cases are designed with sustainability in mind, while also allowing you to express yourself!</p>
+            </section>
+            <section>
+                <h2>Contact Us</h2>
+                <p>If you are looking for product updates, we have a mailing list you can sign up to. But if you have other questions, please reach out to us!</p>
+                <p>Email: CharizsShields@email.com</p>
+                <p>Phone: +1800 123 123</p>
+                <p>Address: 99 Road Street, Australia</p>
+            </section>
+        </div>
+        <div class="main-image">
+            <img src="images/header background.png" alt="Decorative Image">
+        </div>
+    </div>
+    <footer>
+        <!--Footer -->
+        <div class="footer-container">
+            <div class="footer-section quick-links">
+                <!--Quick links -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="footer-section keep-in-touch">
+                <!--Scubscription form -->
+                <h3>LET'S KEEP IN TOUCH</h3>
+                <p>Get shield up with our latest cases.</p>
+                <form id="SubscriptionForm" method="post">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <!-- Checkbox labels and inputs -->
+                    <p>Products you're interested in:</p>
+                    <label><input type="checkbox" name="interest" value="phone-cases"> Phone Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="watch-cases"> Watch Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="ipad-cases"> iPad Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="macbook-cases"> MacBook Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="others"> Others</label><br>
+                    <button type="submit">Subscribe</button>
+                    <span id="subscription-message"></span>
+                </form>
+            </div>    
+            <div class="footer-section social-media">
+                <!--Social Media links -->
+                <div class="social-media-links">
+                    <a href="#"><img src="images/facebook.WebP" alt="Charizs Shields on Facebook"></a>
+                    <a href="#"><img src="images/instagram.WebP" alt="Charizs Shields on Instagram"></a>
+                    <a href="#"><img src="images/X.WebP" alt="Charizs Shields on X"></a>                </div>
+                </div>
+            </div>
+        <p>&copy; 2024 Charzis Shields</p>
+    </footer>
+    <script src="js/about.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

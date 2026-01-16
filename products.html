@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charizs Shields offers a wide range of protective cases for your electronic devices.">
+    <meta name="keywords" content="Charizs Shields, phone cases, watch cases, iPad cases, MacBook cases">
+    <title>Charizs Shields Shopping Site</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Logo and main navigation -->
+    <div class="header-background">
+        <header>
+            <a href="index.html"><img src="images/small_logo.WebP" alt="Charizs Shields Logo" id="logo"></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="products.html"><b>PRODUCTS</b></a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a onclick="openCart()">CART</a></li>
+                </ul>
+            </nav>  
+        </header>
+    </div>
+    <div id="cart-sidebar" class="cart-sidebar">
+        <section class="cart-content">
+            <button onclick="closeCart()" id="close-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <h1>CART</h1>
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <ul id="cart-list"></ul>
+                <script>
+                    window.onload = function() {
+                        displayCartData();
+                    };
+                </script>
+            </section>
+            <section class="order-button">
+                <button><a href="checkout.html">Place Order</a></button>
+            </section>
+        </section>  
+    </div> 
+
+    <!-- Filter buttons -->
+    <div class="filter-container">
+        <button class="filter-button" onclick="filterProducts('all')">All</button>
+        <button class="filter-button" onclick="filterProducts('phone-case')">Phone Cases</button>
+        <button class="filter-button" onclick="filterProducts('wallet')">Wallets</button>
+        <button class="filter-button" onclick="filterProducts('ipad-case')">iPad Cases</button>
+        <button class="filter-button" onclick="filterProducts('macbook-case')">MacBook Cases</button>
+        <button class="filter-button" onclick="filterProducts('watch-band')">Watch Bands</button>
+    </div> 
+
+    <div class="product-grid">
+        <a href="phone_case.html" style="text-decoration: none; color: inherit;">
+        <div class="product-item" data-category="phone-case">
+            <img src="images/products/clear_case.WebP" alt="Phone Case">
+            <h3>Phone Case</h3>
+            <p>$39.99</p>
+        </div>
+        </a>
+        <div class="product-item" data-category="wallet">
+            <img src="images/products/wallet.WebP" alt="Magsafe Wallet">
+            <h3>Magsafe Wallet</h3>
+            <p>$19.99</p>
+        </div>
+        <div class="product-item" data-category="ipad-case">
+            <img src="images/products/ipad_case.WebP" alt="iPad Case">
+            <h3>iPad Case</h3>
+            <p>$59.99</p>
+        </div>
+        <div class="product-item" data-category="macbook-case">
+            <img src="images/products/macbook_case.WebP" alt="MacBook Case">
+            <h3>MacBook Case</h3>
+            <p>$79.99</p>
+        </div>
+        <div class="product-item" data-category="watch-band">
+            <img src="images/products/watch_band.webp" alt="Apple Watch Band" loading="lazy">
+            <h3>Apple Watch Band</h3>
+            <p>$29.99</p>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer -->
+        <div class="footer-container">
+            <div class="footer-section quick-links">
+                <!-- Quick links -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="footer-section keep-in-touch">
+                <!-- Subscription form -->
+                <h3>LET'S KEEP IN TOUCH</h3>
+                <p>Get shield up with our latest cases.</p>
+                <form id="SubscriptionForm" method="post">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <!-- Checkbox labels and inputs -->
+                    <p>Products you're interested in:</p>
+                    <label><input type="checkbox" name="interest" value="phone-cases"> Phone Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="watch-cases"> Watch Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="ipad-cases"> iPad Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="macbook-cases"> MacBook Cases</label><br>
+                    <label><input type="checkbox" name="interest" value="others"> Others</label><br>
+                    <button type="submit">Subscribe</button>
+                    <span id="subscription-message"></span>
+                </form>
+            </div>    
+            <div class="footer-section social-media">
+                <!-- Social Media links -->
+                <div class="social-media-links">
+                    <a href="#"><img src="images/facebook.WebP" alt="Charizs Shields on Facebook"></a>
+                    <a href="#"><img src="images/instagram.WebP" alt="Charizs Shields on Instagram"></a>
+                    <a href="#"><img src="images/X.WebP" alt="Charizs Shields on X"></a>                
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Charzis Shields</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

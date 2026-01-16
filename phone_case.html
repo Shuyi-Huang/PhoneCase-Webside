@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charizs Shields offers a wide range of protective cases for your electronic devices.">
+    <meta name="keywords" content="Charizs Shields, phone cases, watch cases, iPad cases, MacBook cases">
+    <title>Charizs Shields Shopping Site</title>
+    <link rel="stylesheet" href="css/phone_case.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Logo and main navigation -->
+    <div class="header-background">
+        <header>
+            <a href="index.html"><img src="images/small_logo.WebP" alt="Charizs Shields Logo" id="logo"></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="products.html"><b>PRODUCTS</b></a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a onclick="openCart()">CART</a></li>
+                </ul>
+            </nav>  
+        </header>
+    </div>
+    <div id="cart-sidebar" class="cart-sidebar">
+        <section class="cart-content">
+            <button onclick="closeCart()" id="close-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <h1>CART</h1>
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <ul id="cart-list"></ul>
+                <script>
+                    window.onload = function() {
+                        displayCartData();
+                    };
+                </script>
+            </section>
+            <section class="order-button">
+                <button><a href="checkout.html">Place Order</a></button>
+            </section>
+        </section>  
+    </div>    
+    <main class="container">
+      <section class="product-display">
+        <div class="image-gallery">
+          <img src="images/products/clear_case.WebP" alt="Clear iPhone Case" class="active-image">
+          <div class="thumbnail-container">
+              <img src="images/products/clear_case.WebP" alt="Clear iPhone Case" class="thumbnail">
+              <img src="images/products/blue_case.WebP" alt="Blue iPhone Case" class="thumbnail">
+              <img src="images/products/black_case.WebP" alt="Black iPhone Case" class="thumbnail">
+          </div>
+        </div> 
+        <div class="product-info">
+          <h1>iPhone Case with MagSafe</h1>
+          <p class="subtitle">The Beauty of Simplicity</p>
+          <div class="ratings">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span class="rating-info">(4 from 2,188 ratings)</span>
+          </div>
+          <form class="purchase-options">
+              <div class="selector">
+                  <label for="device">Select your device:</label><br>
+                  <select name="device" id="device">
+                      <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+                      <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+                      <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+                      <option value="iPhone 15">iPhone 15</option>
+                      <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+                      <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+                      <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+                      <option value="iPhone 14">iPhone 14</option>
+                  </select>
+              </div>
+              <div class="selector">
+                  <label for="color">Choose your color:</label><br>
+                  <select name="color" id="color">
+                      <option value="clear">Clear</option>
+                      <option value="blue">Blue</option>
+                      <option value="black">Black</option>
+                  </select>
+              </div>
+              <div class="selector">
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-input">
+            </div>
+              <div class="price">
+                  <span>$39.99</span>
+              </div>
+              <a href="checkout.html" class="add-to-cart">Add to cart</a>
+          </form>
+          <div class="availability">
+              <p><i class="fas fa-check-circle"></i> In stock</p>
+              <p>Available now with free delivery.</p>
+          </div>
+          <a href="products.html" class="back-button">Back to products</a>
+        </div>
+      </section>
+    </main>        
+    <footer>
+      <!--Footer -->
+      <div class="footer-container">
+          <div class="footer-section quick-links">
+              <!--Quick links -->
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="products.html">PRODUCTS</a></li>
+                  <li><a href="about.html">ABOUT US</a></li>
+              </ul>
+          </div>
+          <div class="footer-section keep-in-touch">
+              <!--Scubscription form -->
+              <h3>LET'S KEEP IN TOUCH</h3>
+              <p>Get shield up with our latest cases.</p>
+              <form id="SubscriptionForm" method="post">
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                  <!-- Checkbox labels and inputs -->
+                  <p>Products you're interested in:</p>
+                  <label><input type="checkbox" name="interest" value="phone-cases"> Phone Cases</label><br>
+                  <label><input type="checkbox" name="interest" value="watch-cases"> Watch Cases</label><br>
+                  <label><input type="checkbox" name="interest" value="ipad-cases"> iPad Cases</label><br>
+                  <label><input type="checkbox" name="interest" value="macbook-cases"> MacBook Cases</label><br>
+                  <label><input type="checkbox" name="interest" value="others"> Others</label><br>
+                  <button type="submit">Subscribe</button>
+                  <span id="subscription-message"></span>
+              </form>
+          </div>    
+          <div class="footer-section social-media">
+              <!--Social Media links -->
+              <div class="social-media-links">
+                  <a href="#"><img src="images/facebook.WebP" alt="Charizs Shields on Facebook"></a>
+                  <a href="#"><img src="images/instagram.WebP" alt="Charizs Shields on Instagram"></a>
+                  <a href="#"><img src="images/X.WebP" alt="Charizs Shields on X"></a>                </div>
+              </div>
+          </div>
+      <p>&copy; 2024 Charzis Shields</p>
+    </footer>
+<script src="js/phone_case.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
